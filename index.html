@@ -39,6 +39,14 @@
       margin:5px 15px 0px 30px ;
       height: 50px;
     }
+    img{
+    	width:100%;
+    	height:150px;
+    	margin: 2px;
+    }
+    #centerImg{
+    	height:400px;
+    }
     </style>
   </head>
 
@@ -103,7 +111,16 @@
 
                 </form>
                </div>
+               <a href="#" class="col-md-6 col-sm-6 col-xs-12"> <img src="C:\img\IDontKnow.jpg" id="img1"/> </a>
+
+               <a href="#" class="col-md-6 col-sm-6 col-xs-12"> <img src="C:\img\nature.jpg" id="img2"/> </a>
+
+                <a href="#" class="col-md-6 col-sm-6 col-xs-12"> <img src="C:\img\iniesta.jpg" id="img3"/> </a>
+
+               <a href="#" class="col-md-6 col-sm-6 col-xs-12"> <img src="C:\img\451028424.jpg" id="img4"/> </a>
+
           </div>
+          <a href="#" class="col-md-8 col-sm-8 col-xs-8" id="centerImgContainer"> </a>
 
         </div>
         <!-- /page content -->
@@ -375,6 +392,21 @@
       });
     </script>
     <!-- /bootstrap-daterangepicker -->
+    <script>
+    	$('#img1').click(function() {
+          $('#centerImgContainer').html("<img src='C:/img/IDontKnow.jpg' id='centerImg'/>");
+        });
+        $('#img2').click(function() {
+          $('#centerImgContainer').html("<img src='C:/img/nature.jpg' id='centerImg'/>");
+        });
+
+        $('#img3').click(function() {
+          $('#centerImgContainer').html("<img src='C:/img/iniesta.jpg' id='centerImg'/>");
+        });
+        $('#img4').click(function() {
+          $('#centerImgContainer').html("<img src='C:/img/451028424.jpg' id='centerImg'/>");
+        });
+    </script
 
     <!-- gauge.js -->
     <script>
